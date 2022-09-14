@@ -1,0 +1,191 @@
+/* search variants // light block */
+.search-variants.light-block {
+	.color-cover  {
+		background: #ffffff;
+		opacity: .85;
+	}
+	.search-variants__item {
+		box-shadow: 0 0 20px rgba(0,0,0,.3);
+	}
+}
+
+.color-block.light-block h3 {
+	color: var(--main-500);
+}
+
+/* search variants // horisontal */
+.search-variants.horisontal  {
+	.flex-block.search-variants-list {
+		display: block;
+	}
+	.search-variants__item {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.search-variants__list {
+		display: flex;
+		justify-content: space-between;
+	}
+	.search-variants__title {
+		text-align: left;
+	}
+	.search-variants__number {
+		color: #ffffff;
+		background: none;
+		border: none;
+		width: 64px;
+		height: 64px;
+		line-height: 64px;
+		opacity: .2;
+		left: 10px;
+		top: 0;
+	}
+	.search-variants__list {
+		padding: 0 40px;
+	}
+	.search-variants__list_item {
+		height: auto;
+		width: 24%;
+		box-sizing: border-box;
+		padding-right: 5px;
+		p {
+			padding-left: 10px;
+			b {
+				line-height: 20px;
+				margin-bottom: 8px;
+				display: block;
+			}
+		}
+	}
+	.search-variants__button {
+		padding: 0 40px;
+		a {
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 50px;
+			line-height: 50px;
+		}
+	}
+	.search-variants__item:nth-child(1) {
+		margin-bottom: 50px;
+	}
+
+	.search-variants__form  {
+		position: relative;
+		left: auto;
+		top: auto;
+		width: 47% !important;
+		margin-left: auto;
+		margin-right: auto;
+
+		form {
+			padding: 25px 40px;
+		}
+	}
+}
+
+/* search variants // light block */
+.profits__block.light-block {
+	background: #f7f7f7;
+	
+}
+/* search variants // color block */
+
+.profits__block.color-block {
+	position: relative;
+
+	&:before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
+		z-index: 3;
+	}
+	.center {
+		position: relative;
+		z-index: 5;
+	}
+	.subtitle {
+		color: #ffffff;
+		opacity: .7;
+	}
+}
+.color-block .profits__item__hover.color-block{
+	&:after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #ffffff;
+		z-index: 3;
+		opacity: .6;
+	}
+
+	&:before {
+		opacity: .4;
+	}
+
+	p {
+		position: relative;
+		z-index: 5;
+	}
+}
+
+.vertical {
+	.profits__item__content {
+		padding: 25px 0;
+
+		p {
+			padding-left: 120px;
+			margin-bottom: 5px;
+		}
+
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			border-radius: 0;
+			width: 70px;	
+			height: 100%;
+			left: 0;
+			top: 0;	
+		}
+	}
+	.profits__item__content span {
+		display: block;
+		position: relative;
+		left: auto;
+		top: auto;
+		margin-left: 120px;
+		margin-bottom: 20px;
+	}
+
+	.profits__item__content div {
+		position: absolute;
+		left: 25px;
+		top: 15px;
+		width: 60px;
+		height: 60px;
+		border: none;
+
+		b {
+			width: 100%;
+			height: 100%;			
+			border-radius: 50px;
+			top: 0;
+			left: 0;
+			line-height: 58px;
+			font-size: 30px;
+			font-weight: 600;
+			color: rgba(255,255,255,.7);
+			border: 0;
+		}
+	}
+}

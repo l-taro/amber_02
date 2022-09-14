@@ -1,0 +1,246 @@
+/* slider */
+.slider__content {
+	box-shadow: 0 0 30px rgba(0,0,0,.3);
+	border-radius: 10px;
+}
+.slider__item {
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+
+	&.flex-block {
+		align-items: center;
+	}
+
+	.button {		
+		position: absolute;
+		bottom: 35px;
+	}
+}
+.slider__item__img img {
+	height: 400px;
+	display: block;
+	border-radius: 10px 0 0 10px;
+}
+
+.slider__item__text {
+	padding-left: 30px;
+	padding-right: 20px;
+
+	p {
+		padding-bottom: 70px;
+	}
+}
+.slider-title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+/*
+.slider__section {
+	.bx-wrapper {
+		box-shadow: 0 0 30px rgba(0,0,0,.3);
+		border-radius: 10px;
+	}
+}
+.slider__wrapper {
+	position: relative;
+	margin-bottom: 50px;
+
+	.bx-pager {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		bottom: -50px;
+		width: 100%;
+		.bx-pager-item {
+			width: 20px;
+			height: 20px;
+			margin: 0 6px;
+			a {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50px;
+				background: #b4bece;
+				overflow: hidden;
+				text-indent: -5000px;
+				&.active {
+					background: #c80d0d;
+				}
+			}
+		}
+	}
+
+	.bx-controls-direction {
+		position: absolute;
+		z-index: 5;
+		width: 100px;
+		height: 40px;
+		right: 45px;
+		bottom: 40px;
+		display: flex;
+
+		a {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50px;
+			background: #eceff3;
+			margin: 0 5px;
+			position: relative;
+			text-indent: -5000px;
+			overflow: hidden;
+
+			&:before {
+				content: '';
+				height: 20px;
+				width: 12px;
+				background: url(#{$image-url}slider-arrow.png) left top no-repeat;
+				position: absolute;
+				top: 10px;
+				left: 12px;
+			}
+
+			&:hover:before {
+				background-position: left bottom;
+			}
+
+			&.bx-next:before {
+				transform: rotate(180deg);
+				left: 16px;
+			}
+		}
+	}
+}*/
+
+/* Слайдер 
+.slick-slider{} */ 
+
+/* Слайдер запущен
+.slick-slider.slick-initialized{} */ 
+
+/* Слайдер с точками 
+.slick-slider.slick-dotted{}*/ 
+.slider__wrapper {
+	padding-bottom: 55px;
+	overflow: hidden;
+}
+/* Ограничивающая оболочка*/   
+.slick-list {
+	overflow: hidden;
+} 
+
+/* Лента слайдов */ 
+.slider__content {
+	min-width: 0;
+	position: relative;
+}
+.slick-track{
+	display: flex;
+}
+.slick-arrow{
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: #eceff3;
+	margin: 0 5px;
+	font-size: 0;
+	bottom: 40px;
+	z-index: 100;
+	right: 100px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		height: 20px;
+		width: 12px;
+		background: url(#{$image-url}slider-arrow.png) left top no-repeat;
+		position: absolute;
+		top: 10px;
+		left: 12px;
+	}
+	&:hover:before {
+		background-position: left bottom;
+	}
+	&.slick-next {
+		right: 45px;
+	}
+	&.slick-next:before {
+		transform: rotate(180deg);
+		left: 16px;
+	}
+}
+
+.slick-dots {
+	position: absolute;
+		display: flex;
+		justify-content: center;
+		bottom: -50px;
+		width: 100%;
+		li {
+			width: 20px;
+			height: 20px;
+			margin: 0 6px;
+
+			button {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50px;
+				background: #b4bece;
+				font-size: 0;
+				border: none;
+				outline: none;
+				cursor: pointer;				
+			}
+			&.slick-active {
+				button {
+					background: #c80d0d;
+				}
+			}
+		}
+}
+
+/* Слайд  
+.slick-slide{}*/  
+
+/* Слайд активный (показывается)
+.slick-slide.slick-active{} */ 
+
+/* Слайд основной 
+.slick-slide.slick-current{} */ 
+
+/* Слайд по центру 
+.slick-slide.slick-center{} */ 
+
+/* Клонированный слайд
+.slick-slide.slick-cloned{}*/ 
+
+/* Стрелка 
+.slick-arrow{} */ 
+
+/* Стрелка влево  
+.slick-arrow.slick-prev{} */ 
+
+/* Стрелка вправо  
+.slick-arrow.slick-next{}*/ 
+
+/* Стрелка не активная  
+.slick-arrow.slick-disabled{}*/ 
+
+/* Точки (булиты) 
+.slick-dots{} 
+.slick-dots li{} */ 
+
+/* Активная точка
+.slick-dots li.slick-active{}*/ 
+
+/* Элемент точки 
+.slick-dots li button{} */ 
+

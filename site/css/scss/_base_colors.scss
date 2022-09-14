@@ -1,0 +1,143 @@
+$violet-color: #4f4ea1;
+$blue-color: #0e7bcf;
+$red-color: #c52727;
+$green-color: #199351;
+$blue-dark-color: #195bbd;
+
+$violet-color-light: #d1d0ff;
+$blue-color-light: #c7e7ff;
+$red-color-light: #f9c6c6;
+$green-color-light: #cbffe3;
+$blue-dark-color-light: #8cbafc;
+
+/* base colors */
+.color-violet {
+	--main-500: #{$violet-color};	
+	--light-500: #{$violet-color-light};
+}
+.color-blue {
+ 	--main-500: #{$blue-color};
+ 	--light-500: #{$blue-color-light};
+}
+.color-red {
+	--main-500: #{$red-color};
+	--light-500: #{$red-color-light};
+}
+.color-green {
+	--main-500: #{$green-color};
+	--light-500: #{$green-color-light};
+}
+.color-blue-dark {
+	--main-500: #{$blue-dark-color};
+	--light-500: #{$blue-dark-color-light};
+}
+
+.color-light {
+	color: var(--light-500);
+}
+.color-border-light {
+	border-color: var(--light-500) !important;
+}
+.color-text {
+	color: var(--main-500);
+}
+.color-border {
+	border-color: var(--main-500) !important;
+}
+.color-block {
+	background: var(--main-500);
+}
+
+/* icons */
+ .custom-stroke { 	
+	stroke: var(--main-500);
+	width: 36px;
+	height: 36px;
+	fill: var(--main-500);
+ }
+ .phone_line {
+	width: 36px;
+	height: 36px;
+}
+.car_line {
+	width: 36px;
+	height: 36px;
+}
+.note_line, .gear_line {
+	width: 40px;
+	height: 40px;
+}
+.list_line {
+	width: 40px;
+	height: 37px;
+}
+.telegram_line {
+	fill: #5eb2e4;
+	width: 34px ;
+	height: 34px;
+}
+.telegram_line.custom-color {
+	fill: var(--main-500);
+}
+.viber_line {
+	stroke: #b05ef6;
+	fill: #b05ef6;
+	width: 38px ;
+	height: 38px;
+}
+.viber_line.custom-color {
+	stroke: var(--main-500);
+	fill: var(--main-500);
+}
+.wa_line {
+	stroke: #29f40e;
+	fill: #29f40e;
+	width: 30px ;
+	height: 30px;
+}
+.wa_line.custom-color {
+	stroke: var(--main-500);
+	fill: var(--main-500);
+}
+.header__contacts .viber_line {
+	stroke: #4bae50;
+	fill: #4bae50;
+}
+.header__contacts .wa_line {
+	stroke: #8e23aa;
+	fill: #8e23aa;
+}
+.header__contacts .telegram_line {
+	fill: #27aed6;
+}
+
+/* profits */
+.profits__item__content:before {
+	content: '';
+	height: 125px;
+	width: 125px;
+	background: var(--main-500);
+	display: block;
+	opacity: .05;
+	position: absolute;
+	top: -50px;
+	left: -45px;
+	border-radius: 100%;
+}
+
+.profits__item__content:after {
+	content: '';
+	height: 80px;
+	width: 80px;
+	background: var(--main-500);
+	display: block;
+	opacity: .05;
+	position: absolute;
+	top: -20px;
+	left: -35px;
+	border-radius: 100px;
+}
+.color-block .profits__item__hover.color-block {
+	background: var(--light-500);
+	color: #000000;
+}

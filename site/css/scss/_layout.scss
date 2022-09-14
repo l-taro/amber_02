@@ -1,0 +1,14 @@
+.center {
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+	padding: 60px 30px;
+}
+.flex-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+

@@ -1,0 +1,21 @@
+/* base */
+@import 'scss/_reset';
+@import 'scss/_vars.scss';
+@import 'scss/_base_colors.scss';
+@import 'scss/_text.scss';
+
+/* pages */
+@import 'scss/_layout.scss';
+@import 'scss/_header.scss';
+@import 'scss/_footer.scss';
+@import 'scss/_content_blocks.scss';
+@import 'scss/_content_blocks_variants.scss';
+@import 'scss/_slider.scss';
+
+/* form */
+@import 'scss/_buttons.scss';
+@import 'scss/_form_elements.scss';
+@import 'scss/_form_blocks.scss';
+
+/* adaptive */
+@import 'scss/_adaptive.scss';
